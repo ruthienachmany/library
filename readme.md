@@ -1,5 +1,5 @@
-                 
-I want you to write a small system for managing a personal library. The system should be accessible from the command line. I would interact with it like so:
+A small system for managing a personal library, accessible from the command line. 
+Interact with it like so:
 
   $ ./library
   
@@ -58,7 +58,7 @@ I want you to write a small system for managing a personal library. The system s
 
 --------------------------
 
-As shown above, the program should accept the following commands:
+As shown above, the program accepts the following commands:
 
 - **add "$title" "$author"**: adds a book to the library with the given title and author. All books are unread by default.
 - **read "$title"**: marks a given book as read.
@@ -69,8 +69,8 @@ As shown above, the program should accept the following commands:
 - **quit**: quits the program.
 
 
-Some other stipulations:
+Note:
 
-- You can use whatever language you want.
-- Assume that there can never be two books with the same title in the system (even if they were to have different authors). The user shouldn't be allowed to add two books with the same title.
-- **Do not** use a persistance mechanism (ie, a SQL database) for the books. Store them in memory. That is, every time you run the program, the list of books should be empty. Using a database can make some aspects of this a little too easy :)
+- Program uses Ruby
+- There can never be two books with the same title in the system (even if they were to have different authors). The user is not allowed to add two books with the same title.
+- Every time the program is run, the list of books starts out empty. Data does not persist once program ends.
